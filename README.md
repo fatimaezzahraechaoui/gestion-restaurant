@@ -1,6 +1,6 @@
-# RestoPro ERP - Gestion Totale
+# RestoPro ERP - Gestion Restaurant Marocain 🇲🇦
 
-> Application ERP complète pour la gestion d'un restaurant, incluant inventaire, personnel, fournisseurs, menu et point de vente (POS).
+> Application ERP complète pour la gestion d'un restaurant marocain, incluant inventaire, personnel, fournisseurs, menu traditionnel et point de vente (POS). Site 100% marocain avec devise MAD, plats traditionnels et éléments culturels.
 
 ## 🔗 Liens Importants
 
@@ -46,8 +46,14 @@
 
 ## 📝 Thème Choisi
 
-*   **Thème :** Gestion de Restaurant
-*   **Description :** Système ERP complet pour gérer les opérations d'un restaurant : inventaire des ingrédients, gestion du personnel, fournisseurs, carte du menu, et interface de point de vente (POS).
+*   **Thème :** Gestion de Restaurant Marocain
+*   **Description :** Système ERP complet pour gérer les opérations d'un restaurant marocain : inventaire des ingrédients, gestion du personnel, fournisseurs, carte du menu traditionnel (Tajines, Couscous, Pastilla, etc.), et interface de point de vente (POS).
+*   **Caractéristiques Marocaines :**
+    - Devise : Dirham Marocain (MAD)
+    - Plats traditionnels : Tajines, Couscous Royal, Pastilla, Méchoui, Salade Marocaine, Thé à la Menthe
+    - Noms marocains pour le personnel et les fournisseurs
+    - Éléments culturels : texte bilingue (Français/Arabe)
+    - Fournisseurs marocains avec numéros de téléphone locaux (+212)
 
 ---
 
@@ -77,7 +83,8 @@
 - [x] **Séparation des fichiers :** HTML, CSS, JS séparés
 - [x] **Structure organisée :** Dossiers css/, js/, assets/
 - [x] **Code modulaire** avec fonctions JavaScript organisées
-- [ ] **Chart 5 :** [Type]
+- [x] **Données hardcodées :** Fallback intégré pour fonctionner même sans serveur local
+- [x] **Localisation Marocaine :** Interface adaptée au contexte marocain
 
 ### Technique & Bonus
 - [x] **Données externes :** Chargement des données initiales depuis `data.json`
@@ -112,10 +119,104 @@ Pour lancer le projet localement :
     cd gestion-restaurant
     ```
 3.  Lancer l'application :
-    *   Ouvrez simplement `index.html` dans votre navigateur.
-    *   OU utilisez Live Server (VS Code Extension).
+    
+    **⚠️ Important :** Pour éviter les erreurs CORS, utilisez un serveur local :
+    
+    **Option 1 : Python (Recommandé)**
+    ```bash
+    python -m http.server 8000
+    ```
+    Puis ouvrez : http://localhost:8000
+    
+    **Option 2 : Node.js**
+    ```bash
+    npx http-server -p 8000
+    ```
+    Puis ouvrez : http://localhost:8000
+    
+    **Option 3 : VS Code Live Server**
+    - Installez l'extension "Live Server"
+    - Clic droit sur `index.html` → "Open with Live Server"
+    
+    **Option 4 : Ouvrir directement (avec limitations)**
+    - Double-cliquez sur `index.html`
+    - ⚠️ Les données de secours seront utilisées (CORS bloque data.json)
+    - Les données hardcodées dans le JavaScript fonctionneront quand même
+
+## 🔐 Identifiants de Connexion
+
+- **Admin :** `admin` / `admin`
+- **Staff :** `staff` / `1234`
 
 ---
 
+## 🍽️ Plats Disponibles dans le Menu
+
+Le menu comprend des plats traditionnels marocains :
+
+- **Tajine Poulet aux Olives** - 85 MAD
+- **Couscous Royal** - 95 MAD
+- **Pastilla au Poulet** - 75 MAD
+- **Méchoui d'Agneau** - 120 MAD
+- **Salade Marocaine** - 35 MAD
+- **Thé à la Menthe** - 15 MAD
+
+## 👥 Personnel par Défaut
+
+- **Ahmed Alami** - Admin
+- **Fatima Benali** - Cuisinier
+- **Youssef Idrissi** - Serveur
+- **Aicha Tazi** - Caissier
+
+## 📦 Inventaire par Défaut
+
+- Poulet Fermier, Tomates Fraîches, Huile d'Olive
+- Agneau, Semoule Fine, Safran
+
+## 🏪 Fournisseurs par Défaut
+
+- **Maroc Food Distribution** - Frais (+212 522 123 456)
+- **Atlas Boissons** - Liquides (+212 522 789 012)
+- **Marché Central Casablanca** - Épicerie (+212 522 456 789)
+- **Bio Maroc** - Bio (+212 522 345 678)
+
+## 🛠️ Fonctionnalités Techniques
+
+### Gestion des Données
+- **localStorage** : Persistance automatique des données
+- **data.json** : Données initiales (chargement via fetch)
+- **Fallback** : Données hardcodées en cas d'échec du chargement JSON
+- **Réinitialisation** : Bouton pour réinitialiser toutes les données
+
+### Interface
+- **Design moderne** avec Tailwind CSS
+- **Responsive** : Adapté mobile, tablette et desktop
+- **Animations fluides** : Transitions et effets hover
+- **Modals** : Formulaires pour CRUD
+- **Graphiques** : Chart.js pour les statistiques
+
+## 🐛 Résolution de Problèmes
+
+### Les données ne s'affichent pas
+1. Vérifiez que vous utilisez un serveur local (pas file://)
+2. Ouvrez la console (F12) pour voir les erreurs
+3. Utilisez le bouton "Réinitialiser Données" dans la sidebar
+4. Vérifiez que les données sont bien chargées dans localStorage
+
+### Erreur CORS
+- Utilisez un serveur local (voir section Installation)
+- Les données de secours fonctionneront même avec file://
+
 ## 📸 Captures d'écran (Optionnel)
 <!-- Vous pouvez ajouter ici 1 ou 2 screenshots de votre interface -->
+
+## 📄 Licence
+
+Ce projet est développé dans le cadre d'un projet académique.
+
+## 👨‍💻 Contribution
+
+Projet développé par l'équipe RestoPro :
+- Fatima Ezzahrae Chaoui
+- Nada El Alaoui
+- Kenza El Alaoui
