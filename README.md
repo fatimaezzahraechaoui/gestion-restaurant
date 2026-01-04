@@ -1,73 +1,101 @@
-# Nom du Projet (ex: MyManager - Gestion Hospitalière)
+# RestoPro ERP - Gestion Totale
 
-<!-- Mettez un court slogan ou une description en une phrase ici -->
-> Application Backoffice de gestion réalisée dans le cadre du module Dévelopement web.
+> Application ERP complète pour la gestion d'un restaurant, incluant inventaire, personnel, fournisseurs, menu et point de vente (POS).
 
 ## 🔗 Liens Importants
 
-<!-- REMPLACEZ LES LIENS CI-DESSOUS -->
-- **APPLICATION DÉPLOYÉE (Live Demo) :** [CLIQUEZ ICI POUR VOIR LE SITE](https://)
-- **Repository GitHub :** [Lien vers ce repo](https://)
+- **Repository GitHub :** [gestion-restaurant](https://github.com/fatimaezzahraechaoui/gestion-restaurant.git)
 
 ---
 
 ## 👥 Membres de l'Équipe
 
-**Nom du Groupe :** [Insérer le nom du groupe ici]
+**Nom du Groupe :** Équipe RestoPro
 
-| Prénom & Nom | Rôle / Tâches principales | Lien Github |
-|--------------|---------------------------|-------------|
-| Étudiant 1   | (ex: Dashboard, ChartJS)  | [@pseudo](https://github.com/pseudo) |
-| Étudiant 2   | (ex: CRUD Utilisateurs)   | [@pseudo](https://github.com/pseudo) |
-| Étudiant 3   | (ex: CSS, Responsive)     | [@pseudo](https://github.com/pseudo) |
+| Prénom & Nom | Rôle Principal | Lien Github |
+|--------------|----------------|-------------|
+| Fatima Ezzahra Ech-Chaoui | Architecture & Intégration | [@fatimaezzahraechaoui](https://github.com/fatimaezzahraechaoui) |
+| Nada El Alaoui | Interface Utilisateur | [@nadaelalaoui](https://github.com/nadaelalaoui) |
+| Kenza El Alaoui | Logique Métier | [@kenzaelalaoui](https://github.com/kenzaelalaoui) |
+
+---
+
+## 👥 Répartition des Tâches par Membre
+
+### Fatima Ezzahra Ech-Chaoui - Architecture & Intégration
+- **Dashboard** : KPIs (ventes, stock, effectif), graphique Chart.js
+- **Authentification** : Système de login avec rôles (Admin/Staff)
+- **Structure générale** : Architecture des fichiers, séparation HTML/CSS/JS
+- **Navigation** : Sidebar, onglets, gestion des vues
+
+### Nada El Alaoui - Interface Utilisateur
+- **Design responsive** : Layout adaptatif avec Tailwind CSS
+- **Modals** : Formulaires CRUD pour employés, fournisseurs, menu, stock
+- **Animations** : Transitions fluides, effets hover, loading states
+- **UX/UI** : Interface utilisateur, ergonomie, accessibilité
+
+### Kenza El Alaoui - Logique Métier
+- **CRUD Employés** : Gestion du personnel (ajout, modification, suppression)
+- **CRUD Inventaire** : Gestion des ingrédients et alertes de stock
+- **CRUD Fournisseurs** : Gestion des partenaires et contacts
+- **CRUD Menu** : Gestion de la carte des plats
+- **Point de Vente (POS)** : Interface de caisse, panier, paiements
+- **Persistance des données** : localStorage, chargement JSON externe
 
 ---
 
 ## 📝 Thème Choisi
-<!-- Indiquez le thème choisi parmi la liste ou votre sujet personnalisé -->
-*   **Thème :** (ex: Gestion de Bibliothèque / Gestion Immobilière / Custom...)
-*   **Description :** Une brève explication du but de l'application.
+
+*   **Thème :** Gestion de Restaurant
+*   **Description :** Système ERP complet pour gérer les opérations d'un restaurant : inventaire des ingrédients, gestion du personnel, fournisseurs, carte du menu, et interface de point de vente (POS).
 
 ---
 
 ## ✅ État d'Avancement (Checklist)
-<!-- Cochez les cases [x] pour les fonctionnalités terminées. Laissez [ ] pour ce qui n'est pas fait. -->
 
 ### Fonctionnalités Principales
-- [ ] **CRUD 1 :** [Nom Entité, ex: Utilisateurs] (Create, Read, Update, Delete)
-- [ ] **CRUD 2 :** [Nom Entité]
-- [ ] **CRUD 3 :** [Nom Entité]
-- [ ] **CRUD 4 :** [Nom Entité]
-- [ ] **CRUD 5 :** [Nom Entité]
-- [ ] **Recherche & Filtres** dans les tableaux
-- [ ] **Pagination**
+- [x] **CRUD Employés :** Gestion du personnel (Create, Read, Update, Delete)
+- [x] **CRUD Inventaire :** Gestion des ingrédients et stock
+- [x] **CRUD Fournisseurs :** Gestion des partenaires fournisseurs
+- [x] **CRUD Menu :** Gestion de la carte des plats
+- [x] **Point de Vente (POS) :** Interface de caisse pour les commandes
+- [x] **Recherche & Filtres** dans les tableaux
+- [x] **Authentification** avec rôles (Admin/Staff)
 
 ### Dashboard & Data
-- [ ] **KPIs :** Cartes avec chiffres clés (Total utilisateurs, revenus, etc.)
-- [ ] **Chart 1 :** [Type, ex: Pie Chart]
-- [ ] **Chart 2 :** [Type, ex: Bar Chart]
-- [ ] **Chart 3 :** [Type]
-- [ ] **Chart 4 :** [Type]
+- [x] **KPIs :** Ventes du jour, stock critique, effectif actif, nombre de fournisseurs
+- [x] **Chart :** Graphique des ventes hebdomadaires (Line Chart avec Chart.js)
+- [x] **Persistance des données** avec localStorage
+
+### Interface & UX
+- [x] **Design Responsive** avec Tailwind CSS
+- [x] **Animations** et transitions fluides
+- [x] **Modals** pour les formulaires CRUD
+- [x] **Navigation** par onglets dans la sidebar
+
+### Architecture
+- [x] **Séparation des fichiers :** HTML, CSS, JS séparés
+- [x] **Structure organisée :** Dossiers css/, js/, assets/
+- [x] **Code modulaire** avec fonctions JavaScript organisées
 - [ ] **Chart 5 :** [Type]
 
 ### Technique & Bonus
-- [ ] **Export :** (PDF ou CSV)
-- [ ] **Architecture :** Code organisé sans Framework (Vanilla JS)
-- [ ] **Design :** Interface Responsive (Mobile/Tablette)
+- [x] **Données externes :** Chargement des données initiales depuis `data.json`
+- [x] **Persistance :** localStorage pour sauvegarder les données
+- [x] **Architecture :** Code organisé sans Framework (Vanilla JS)
+- [x] **Design :** Interface Responsive (Mobile/Tablette)
 
 ---
 
 ## 🛠 Stack Technique
 
-*   **HTML5 / CSS3** (Framework CSS utilisé : Bootstrap / Tailwind / Autre ?)
+*   **HTML5 / CSS3** (Framework CSS utilisé : Tailwind CSS)
 *   **JavaScript (ES6+)** (Vanilla JS obligatoire)
-*   **Bibliothèques JS utilisées :** (ex: Chart.js, Faker.js, jsPDF, Lodash...)
+*   **Bibliothèques JS utilisées :** Chart.js pour les graphiques
 
 ### APIs Utilisées
-<!-- Listez les APIs externes ou précisez si vous utilisez des données mockées -->
-*   Source des données : [ex: JSONPlaceholder, Mockaroo, API locale...]
-    *   Endpoint 1 : `https://api.emple.com/users`
-    *   Endpoint 2 : ...
+*   Source des données : Fichier JSON externe (`data.json`) pour les données initiales, localStorage pour la persistance
+*   Images : Unsplash API (URLs externes)
 
 ---
 
@@ -77,11 +105,11 @@ Pour lancer le projet localement :
 
 1.  Cloner le repo :
     ```bash
-    git clone https://github.com/votre-user/votre-repo.git
+    git clone https://github.com/fatimaezzahraechaoui/gestion-restaurant.git
     ```
 2.  Ouvrir le dossier :
     ```bash
-    cd votre-dossier
+    cd gestion-restaurant
     ```
 3.  Lancer l'application :
     *   Ouvrez simplement `index.html` dans votre navigateur.

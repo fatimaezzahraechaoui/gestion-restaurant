@@ -1,0 +1,6 @@
+body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; height: 100vh; overflow: hidden; }
+.fade-in { animation: fadeIn 0.2s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+.hidden-view { display: none !important; }
+.sidebar-link.active { background-color: #f97316; color: white; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }

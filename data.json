@@ -1,0 +1,30 @@
+{
+  "employees": [
+    { "id": 101, "name": "Ahmed Alami", "role": "Admin", "status": "Actif", "lastLogin": "2023-12-28 09:15" },
+    { "id": 102, "name": "Fatima Benali", "role": "Cuisinier", "status": "Actif", "lastLogin": "2023-12-28 08:30" },
+    { "id": 103, "name": "Youssef Idrissi", "role": "Serveur", "status": "Inactif", "lastLogin": "2023-12-27 22:10" },
+    { "id": 104, "name": "Aicha Tazi", "role": "Caissier", "status": "Actif", "lastLogin": "2023-12-28 10:00" }
+  ],
+  "inventory": [
+    { "id": 1, "name": "Poulet Fermier", "qty": 45, "unit": "kg", "min": 10 },
+    { "id": 2, "name": "Tomates Fraîches", "qty": 4, "unit": "kg", "min": 5 },
+    { "id": 3, "name": "Huile d'Olive", "qty": 2, "unit": "L", "min": 10 },
+    { "id": 4, "name": "Agneau", "qty": 25, "unit": "kg", "min": 8 },
+    { "id": 5, "name": "Semoule Fine", "qty": 30, "unit": "kg", "min": 10 },
+    { "id": 6, "name": "Safran", "qty": 0.5, "unit": "g", "min": 0.2 }
+  ],
+  "suppliers": [
+    { "id": 1, "name": "Maroc Food Distribution", "contact": "+212 522 123 456", "type": "Frais", "reliability": "A+" },
+    { "id": 2, "name": "Atlas Boissons", "contact": "+212 522 789 012", "type": "Liquides", "reliability": "B" },
+    { "id": 3, "name": "Marché Central Casablanca", "contact": "+212 522 456 789", "type": "Épicerie", "reliability": "A" },
+    { "id": 4, "name": "Bio Maroc", "contact": "+212 522 345 678", "type": "Bio", "reliability": "A+" }
+  ],
+  "menu": [
+    { "id": 1, "name": "Tajine Poulet aux Olives", "price": 85.00, "category": "Tajines", "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400" },
+    { "id": 2, "name": "Couscous Royal", "price": 95.00, "category": "Couscous", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" },
+    { "id": 3, "name": "Pastilla au Poulet", "price": 75.00, "category": "Pastilla", "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" },
+    { "id": 4, "name": "Méchoui d'Agneau", "price": 120.00, "category": "Grillades", "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400" },
+    { "id": 5, "name": "Salade Marocaine", "price": 35.00, "category": "Salades", "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=400" },
+    { "id": 6, "name": "Thé à la Menthe", "price": 15.00, "category": "Boissons", "image": "https://images.unsplash.com/photo-1556679343-c7306c197cbc?w=400" }
+  ]
+}
