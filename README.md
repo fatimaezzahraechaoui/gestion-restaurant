@@ -2,7 +2,7 @@
 
 > Application ERP complète pour la gestion d'un restaurant marocain, incluant inventaire, personnel, fournisseurs, menu traditionnel et point de vente (POS). Site 100% marocain avec devise MAD, plats traditionnels et éléments culturels.
 
-## 🔗 Liens Importants
+## 🔗 Liens Importants :https://fatimaezzahraechaoui.github.io/gestion-restaurant/
 
 - **Repository GitHub :** [gestion-restaurant](https://github.com/fatimaezzahraechaoui/gestion-restaurant.git)
 
